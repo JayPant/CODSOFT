@@ -1,6 +1,6 @@
-# CODSFT Data Science Internship
+# CODSOFT Data Science Internship
 
-Welcome to my CODSFT Data Science Internship repository. This repository contains my work on various data science tasks as part of my internship at CODSFT. The tasks include:
+Welcome to my CODSOFT Data Science Internship repository. This repository contains my work on various data science tasks as part of my internship at CODSOFT. The tasks include:
 
 1. Titanic Survival Prediction
 2. Movie Rating Prediction with Python
@@ -119,7 +119,7 @@ Detect fraudulent credit card transactions using a machine learning model. The d
 
 ## Conclusion
 
-This repository demonstrates my journey through various data science tasks during my internship at CODSFT. Each task helped me develop a deeper understanding of the data science process, from data preprocessing and exploratory analysis to model building and evaluation. I look forward to applying these skills to future projects and continuing to grow as a data scientist.
+This repository demonstrates my journey through various data science tasks during my internship at CODSOFT. Each task helped me develop a deeper understanding of the data science process, from data preprocessing and exploratory analysis to model building and evaluation. I look forward to applying these skills to future projects and continuing to grow as a data scientist.
 
 ---
 

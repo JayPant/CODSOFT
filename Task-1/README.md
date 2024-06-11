@@ -46,10 +46,9 @@ train_data.head()
 # Check data for missing values
 train_data.isnull().sum()
 
-# Filling Missing Values of Age(177), Embarked(2) and Cabin(687)
+# Filling Missing Values of Age(177), Embarked(2) 
 train_data['Age']= train_data['Age'].fillna(train_data['Age'].median())
 train_data['Embarked']= train_data['Embarked'].fillna(train_data['Embarked'].mode())
-train_data['Cabin']= train_data['Cabin'].fillna('U')
 
 
 # Encode categorical Variables- Sex and Embarked

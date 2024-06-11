@@ -19,7 +19,7 @@ This project aims to predict whether a passenger on the Titanic survived or not 
 
 **Questions to Answer:**
 - What features of a passenger contribute to their survival?
-- How does the survival rate vary across different passenger classes, genders, ages, etc.?
+- How does the survival rate vary across different passenger classes, genders and ages, etc.?
 
 ## Data Collection
 

@@ -43,20 +43,22 @@ train_data.head()
 - Normalized/scaled numerical features if necessary.
 
 ```python
-# Check for missing values
+# Check data for missing values
 train_data.isnull().sum()
 
-# Fill missing values
-train_data['Age'].fillna(train_data['Age'].median(), inplace=True)
-train_data['Embarked'].fillna(train_data['Embarked'].mode()[0], inplace=True)
-train_data['Cabin'].fillna('U', inplace=True)  # Treat 'U' as unknown
+# Filling Missing Values of Age(177), Embarked(2) and Cabin(687)
+train_data['Age']= train_data['Age'].fillna(train_data['Age'].median())
+train_data['Embarked']= train_data['Embarked'].fillna(train_data['Embarked'].mode())
+train_data['Cabin']= train_data['Cabin'].fillna('U')
 
-# Encode categorical variables
-train_data['Sex'] = train_data['Sex'].map({'male': 0, 'female': 1})
-train_data['Embarked'] = train_data['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})
+
+# Encode categorical Variables- Sex and Embarked
+train_data['Sex'] = train_data['Sex'].map({'male':0, 'female':1})
+train_data['Embarked'] = train_data['Embarked'].map({'S':0, 'C':1, 'Q':2})
 
 # Drop irrelevant features
-train_data.drop(['PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1, inplace=True)
+train_data.drop(['PassengerId','Name','Ticket','Cabin'],axis=1, inplace=True)
+
 ```
 
 ## Exploratory Data Analysis (EDA)

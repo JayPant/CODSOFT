@@ -1,5 +1,3 @@
-Got it! Here's the revised markup document with the final section aligned with the Titanic Survival Prediction example:
-
 ---
 
 # Movie Rating Prediction with Python

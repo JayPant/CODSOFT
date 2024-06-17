@@ -62,25 +62,30 @@ movie_data.dropna(subset=["Rating"], inplace=True)
 # Drop rows with missing values in critical columns
 movie_data.dropna(subset=['Actor 1', 'Actor 2', 'Actor 3', 'Director', 'Genre'], inplace=True)
 
-# Convert 'Votes' column to integer
-movie_data['Votes'] = movie_data['Votes'].str.replace(',', '').astype(int)
 
-# Convert 'Year' column to integer
-movie_data['Year'] = movie_data['Year'].str.strip('()').astype(int)
+from sklearn.preprocessing import StandardScaler
 
-# Convert 'Duration' column
-movie_data['Duration'] = movie_data['Duration'].str.strip('min').astype(int)
 
-# Fill missing 'Duration' values with median
+# Clean 'Votes' column
+movie_data['Votes'] = movie_data['Votes'].astype(str).str.replace(',', '', regex=False)
+movie_data['Votes'] = pd.to_numeric(movie_data['Votes'], errors='coerce')
+
+# Clean 'Duration' column
+movie_data['Duration'] = movie_data['Duration'].astype(str).str.replace('min', '', regex=False)
+movie_data['Duration'] = pd.to_numeric(movie_data['Duration'], errors='coerce')
 movie_data['Duration'].fillna(movie_data['Duration'].median(), inplace=True)
 
 # One-Hot Encoding for categorical variables
 movie_data = pd.get_dummies(movie_data, columns=['Genre', 'Director', 'Actor 1', 'Actor 2', 'Actor 3'], drop_first=True)
 
 # Normalize numerical features
-from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 movie_data[['Duration', 'Votes']] = scaler.fit_transform(movie_data[['Duration', 'Votes']])
+
+# Check for missing values again
+print("\nMissing values after preprocessing:")
+print(movie_data.isnull().sum())
+
 ```
 
 ## Exploratory Data Analysis (EDA)

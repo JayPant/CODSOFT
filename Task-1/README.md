@@ -1,4 +1,7 @@
 # Titanic Survival Prediction
+Author: Dhananjay Pant
+Domain: Data Science
+Batch: June2024
 
 This project aims to predict whether a passenger on the Titanic survived or not using a machine learning model. The dataset used contains information about individual passengers, such as their age, gender, ticket class, fare, cabin, and whether or not they survived.
 

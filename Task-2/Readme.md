@@ -1,4 +1,7 @@
 # Movie Rating Prediction with Python
+Author: Dhananjay Pant
+Domain: Data Science
+Batch: June2024
 
 This project aims to predict the rating of a movie based on features like genre, director, and actors using a machine learning model. The dataset used contains information about individual movies, such as their name, year, duration, genre, rating, votes, director, and main actors.
 
@@ -205,6 +208,5 @@ rating_predicted = Model.predict(trail)
 # Display the predicted result from the Model
 print("Predicted Rating:", rating_predicted[0])
 ```
-
 
 

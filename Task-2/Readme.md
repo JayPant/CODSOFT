@@ -64,6 +64,7 @@ movies.info()
 
 print(movies.duplicated().sum())
 print()
+
 movies.dropna(inplace=True)
 print(movies.shape)
 

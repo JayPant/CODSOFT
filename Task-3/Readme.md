@@ -1,8 +1,8 @@
 # Iris Flower Classification
 
-Author: Dhananjay Pant
+Author: [Your Name]
 Domain: Data Science
-Batch: June 2025
+Batch: [Your Batch]
 
 This project aims to predict the species of Iris flowers based on their sepal and petal measurements using machine learning models. The Iris dataset contains measurements of 150 Iris flowers from three different species: setosa, versicolor, and virginica. The features in the dataset include sepal length, sepal width, petal length, and petal width.
 
@@ -10,7 +10,7 @@ This project aims to predict the species of Iris flowers based on their sepal an
 
 - [Problem Definition](#problem-definition)
 - [Data Collection](#data-collection)
-- [Data Exploration](#data-exploration)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Building](#model-building)
 - [Model Evaluation](#model-evaluation)
@@ -36,20 +36,29 @@ iris = load_iris()
 X, y = iris.data, iris.target
 ```
 
-## Data Exploration
+## Exploratory Data Analysis (EDA)
 
 ```python
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Create a DataFrame from the Iris dataset
 iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 iris_df['species'] = iris.target
 
-# Display the first few rows of the dataset
-print(iris_df.head())
+# Pairplot to visualize the relationship between features
+sns.pairplot(iris_df, hue='species')
+plt.show()
 
-# Check the distribution of the target variable
-print(iris_df['species'].value_counts())
+# Boxplot to visualize the distribution of each feature by species
+plt.figure(figsize=(12, 6))
+for i, feature in enumerate(iris.feature_names):
+    plt.subplot(2, 2, i+1)
+    sns.boxplot(x='species', y=feature, data=iris_df)
+    plt.title(f'{feature} by Species')
+plt.tight_layout()
+plt.show()
 ```
 
 ## Data Preprocessing
@@ -102,6 +111,3 @@ species = iris.target_names[prediction[0]]
 print("Predicted Species:", species)
 ```
 
----
-
-Feel free to modify and expand upon this template to fit your project's specific requirements and details.

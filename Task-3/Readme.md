@@ -13,7 +13,6 @@ This project aims to predict the species of Iris flowers based on their sepal an
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Building](#model-building)
-- [Model Evaluation](#model-evaluation)
 - [Prediction](#prediction)
 
 ## Problem Definition
@@ -94,9 +93,6 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 ```
 
-## Model Evaluation
-
-The accuracy of the model can be evaluated using metrics like accuracy, precision, recall, or F1-score.
 
 ## Prediction
 

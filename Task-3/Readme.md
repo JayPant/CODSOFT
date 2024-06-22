@@ -2,7 +2,7 @@
 
 Author: Dhananjay Pant
 Domain: Data Science
-Batch: June 2025
+Batch: June 2024
 
 This project aims to predict the species of Iris flowers based on their sepal and petal measurements using machine learning models. The Iris dataset contains measurements of 150 Iris flowers from three different species: setosa, versicolor, and virginica. The features in the dataset include sepal length, sepal width, petal length, and petal width.
 

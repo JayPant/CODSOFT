@@ -22,7 +22,7 @@ Welcome to my CODSOFT Data Science Internship repository. This repository contai
 
 This repository showcases various data science tasks, demonstrating the application of machine learning techniques to solve real-world problems. Each task includes data preprocessing, exploratory data analysis (EDA), model building, and evaluation. The objective is to gain practical experience and a deep understanding of the data science workflow.
 
-## [Task 1: Titanic Survival Predictionhttps://github.com/JayPant/CODSOFT/tree/main/Task-1**)
+## Task 1: Titanic Survival Prediction
 
 ### Objective
 

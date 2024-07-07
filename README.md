@@ -1,4 +1,7 @@
 # CODSOFT Data Science Internship
+**Author:** Dhananjay Pant  
+**Domain:** Data Science  
+**Date:** June 2024
 
 Welcome to my CODSOFT Data Science Internship repository. This repository contains my work on various data science tasks as part of my internship at CODSOFT. The tasks include:
 

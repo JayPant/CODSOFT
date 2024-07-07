@@ -9,8 +9,7 @@ This project aims to detect fraudulent transactions in a credit card dataset usi
 - [Data Preprocessing](#data-preprocessing)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Model Building](#model-building)
-- [Model Tuning](#model-tuning)
-- [Documentation and Presentation](#documentation-and-presentation)
+
 
 ## Problem Definition
 
@@ -31,7 +30,7 @@ The dataset contains the following columns:
 import pandas as pd
 
 # Load the dataset
-file_path = 'creditcard.csv'
+file_path =  r"C:\Users\jaypa\Desktop\CODSOFT\creditcard.csv"
 file = pd.read_csv(file_path)
 
 # Display the first few rows of the dataset
@@ -136,33 +135,3 @@ X_test_prediction = model.predict(X_test)
 test_data_accuracy = accuracy_score(X_test_prediction, Y_test) * 100
 print(f"Test Data Accuracy: {test_data_accuracy}%")
 ```
-
-## Model Tuning
-
-Optimized the model by adjusting hyperparameters and using techniques like cross-validation.
-
-```python
-from sklearn.model_selection import GridSearchCV
-
-# Hyperparameter tuning
-param_grid = {
-    'C': [0.01, 0.1, 1, 10, 100],
-    'solver': ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']
-}
-
-grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=5, scoring='accuracy')
-grid_search.fit(X_train, Y_train)
-
-# Best parameters and model evaluation
-best_model = grid_search.best_estimator_
-Y_pred_best = best_model.predict(X_test)
-best_test_data_accuracy = accuracy_score(Y_test, Y_pred_best) * 100
-print(f"Best Test Data Accuracy: {best_test_data_accuracy}%")
-print(classification_report(Y_test, Y_pred_best))
-```
-
-## Documentation and Presentation
-
-- Documented the entire process, including problem definition, data collection, preprocessing, EDA, model building, and tuning.
-- Created visualizations to support the findings and model evaluation.
-- Presented the project and results effectively through clear and concise documentation.

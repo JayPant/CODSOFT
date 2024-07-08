@@ -1,7 +1,7 @@
 # CODSOFT Data Science Internship
 **Author:** Dhananjay Pant  
 **Domain:** Data Science  
-**Date:** June 2024
+**Date:** June BATCH A57
 
 Welcome to my CODSOFT Data Science Internship repository. This repository contains my work on various data science tasks as part of my internship at CODSOFT. The tasks include:
 
@@ -42,7 +42,7 @@ Build a model to predict whether a passenger on the Titanic survived or not usin
 
 ### Files
 
-- `titanic_survival_prediction.ipynb`: Jupyter notebook with detailed steps and code.
+- [`titanic_survival_prediction.ipynb`](./Task-1/titanic_survival_training.ipynb): Jupyter notebook with detailed steps and code.
 
 ## Task 2: Movie Rating Prediction with Python
 
@@ -61,7 +61,7 @@ Predict movie ratings using a machine learning model. The dataset includes user 
 
 ### Files
 
-- `movie_rating_prediction.ipynb`: Jupyter notebook with detailed steps and code.
+- [`movie_rating_prediction.ipynb`](./Task-2/movie_rating_prediction.ipynb): Jupyter notebook with detailed steps and code.
 
 ## Task 3: Iris Flower Classification
 
@@ -80,7 +80,7 @@ Classify iris flowers into three species based on their features using the Iris 
 
 ### Files
 
-- `iris_flower_classification.ipynb`: Jupyter notebook with detailed steps and code.
+- [`iris_flower_classification.ipynb`](./Task-3/iris_flower_classification.ipynb): Jupyter notebook with detailed steps and code.
 
 ## Task 4: Sales Prediction using Python
 
@@ -99,7 +99,7 @@ Predict future sales using historical sales data. This task involves forecasting
 
 ### Files
 
-- `sales_prediction.ipynb`: Jupyter notebook with detailed steps and code.
+- [`sales_prediction.ipynb`](./Task-4/sales_prediction.ipynb): Jupyter notebook with detailed steps and code.
 
 ## Task 5: Credit Card Fraud Detection
 
@@ -118,7 +118,7 @@ Detect fraudulent credit card transactions using a machine learning model. The d
 
 ### Files
 
-- `credit_card_fraud_detection.ipynb`: Jupyter notebook with detailed steps and code.
+- [`credit_card_fraud_detection.ipynb`](./Task-5/credit_card_fraud_detection.ipynb): Jupyter notebook with detailed steps and code.
 
 ## Conclusion
 
@@ -127,4 +127,3 @@ This repository demonstrates my journey through various data science tasks durin
 ---
 
 Thank you for visiting my repository! If you have any questions or feedback, feel free to reach out.
-

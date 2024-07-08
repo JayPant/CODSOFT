@@ -2,7 +2,7 @@
 
 **Author:** Dhananjay Pant
 **Domain:** Data Science  
-**Date:** June 2024
+**Date:** JUNE BATCH A57 
 
 This project aims to predict the rating of a movie based on features like genre, director, and actors using a machine learning model. The dataset used contains information about individual movies, such as their name, year, duration, genre, rating, votes, director, and main actors.
 
